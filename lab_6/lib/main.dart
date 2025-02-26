@@ -12,6 +12,22 @@ class lab06 extends StatelessWidget {
     return MaterialApp(
       title: 'Lab 06',
       home: Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person_2_outlined),
+              label: "Profile",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings_outlined),
+              label: "Settings",
+            ),
+          ],
+        ),
         drawer: Drawer(
           child: ListView(
             children: [
