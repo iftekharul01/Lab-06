@@ -15,6 +15,24 @@ class lab06 extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
+              Container(
+                height: 90,
+                color: Colors.blue.shade100,
+                child: DrawerHeader(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      //Brand(Brands.google_photos_2),
+                      Icon(Icons.account_balance_rounded, size: 50),
+
+                      TextButton.icon(
+                        onPressed: () {},
+                        label: Text("Close"),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               ListTile(
                 leading: Icon(Icons.person),
                 title: Text('Profile'),
