@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,6 +26,11 @@ class lab06 extends StatelessWidget {
               Image.network(
                 "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/10/zatch-bell-and-shonen-anime.jpg",
               ),
+              CachedNetworkImage(
+                imageUrl: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/02/split-images-of-zatch-brago-and-zeno.jpg",
+                placeholder: (context, url) => CircularProgressIndicator(),
+                errorWidget: (context, url, error) => Icon(Icons.error),
+            ),
             ],
           ),
         ),
