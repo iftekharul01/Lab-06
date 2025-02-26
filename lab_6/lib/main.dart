@@ -19,18 +19,31 @@ class lab06 extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
+              CachedNetworkImage(
+                imageUrl:
+                    "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/02/split-images-of-zatch-brago-and-zeno.jpg",
+                placeholder: (context, url) => CircularProgressIndicator(),
+                errorWidget: (context, url, error) => Icon(Icons.error),
+              ),
               Image(
                 image: NetworkImage(
                     'https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/10/zatch-bell-and-shonen-anime.jpg'),
+              ),
+              CachedNetworkImage(
+                imageUrl:
+                    "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/02/split-images-of-zatch-brago-and-zeno.jpg",
+                placeholder: (context, url) => CircularProgressIndicator(),
+                errorWidget: (context, url, error) => Icon(Icons.error),
               ),
               Image.network(
                 "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/10/zatch-bell-and-shonen-anime.jpg",
               ),
               CachedNetworkImage(
-                imageUrl: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/02/split-images-of-zatch-brago-and-zeno.jpg",
+                imageUrl:
+                    "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/02/split-images-of-zatch-brago-and-zeno.jpg",
                 placeholder: (context, url) => CircularProgressIndicator(),
                 errorWidget: (context, url, error) => Icon(Icons.error),
-            ),
+              ),
             ],
           ),
         ),
