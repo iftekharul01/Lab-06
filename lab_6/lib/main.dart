@@ -18,6 +18,10 @@ class lab06 extends StatelessWidget {
               icon: Icon(Icons.home_outlined),
               label: "Home",
             ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(Icons.search_outlined),
+            //   label: "Search",
+            // ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_2_outlined),
               label: "Profile",
